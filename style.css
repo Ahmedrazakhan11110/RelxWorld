@@ -1,0 +1,68 @@
+/* External Css*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.nav-item .nav-link{
+    color: white;
+}
+.icon:focus{
+    outline: none;
+}
+.carousel-inner{
+    width: 100px;
+    height: 90vh;
+}
+
+#img{
+    width: 400px;
+    height: 80vh;
+}
+i{
+    font-size: 10px;
+}
+.mapswrapper {
+    background: lightblue;
+    position: relative;
+    height: 300px; /* Adjust the height of the map */
+}
+.mapswrapper iframe {
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+.mapswrapper a {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form-control {
+    box-shadow: none !important;
+}
+/* For screens less than 768px (Mobile devices) */
+@media (max-width: 767px) {
+    .navbar {
+        display: block; /* Example to adjust navbar on small screens */
+    }
+    .col-4 {
+        width: 100%; /* Make columns full-width on small screens */
+    }
+}
+
+/* For screens between 768px and 1024px (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-6 {
+        width: 50%; /* For tablets, make columns 50% of the width */
+    }
+}
+
+/* For screens larger than 1024px (Desktops) */
+@media (min-width: 1025px) {
+    .col-4 {
+        width: 33.33%; /* For desktops, 3 columns side by side */
+    }
+}
